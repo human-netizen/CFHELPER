@@ -6,25 +6,26 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.stage.Screen?>
 
-
-<AnchorPane prefHeight="628.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gabfosol.UnsolvedList">
+<AnchorPane  xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gabfosol.UnsolvedList">
    <children>
-      <TextField layoutX="203.0" layoutY="86.0">
+      <AnchorPane layoutX="48.0" layoutY="86.0" />
+      <ListView fx:id="myList" layoutX="3.0" layoutY="161.0" prefHeight="612.0" prefWidth="1326.0" />
+      <TextField fx:id="ratingField" layoutX="370.0" layoutY="86.0">
          <font>
             <Font size="17.0" />
          </font>
       </TextField>
-      <Button layoutX="439.0" layoutY="87.0" mnemonicParsing="false" text="Submit">
+      <Button layoutX="606.0" layoutY="87.0" mnemonicParsing="false" onAction="#addProblem" text="Submit">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Label layoutX="48.0" layoutY="88.0" text="Problem Rating:">
+      <Label layoutX="216.0" layoutY="88.0" text="Problem Rating:">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <ListView fx:id="myList" layoutX="75.0" layoutY="183.0" prefHeight="96.0" prefWidth="404.0" />
    </children>
 </AnchorPane>

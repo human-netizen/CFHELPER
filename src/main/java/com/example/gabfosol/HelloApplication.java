@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
         Rectangle2D screenBounds = Screen.getPrimary().getBounds();
         double width = screenBounds.getWidth();
         double height = screenBounds.getHeight();
-        Scene scene = new Scene(root, width/3, height/2);
+        Scene scene = new Scene(root, 1032, 830);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
