@@ -8,9 +8,11 @@ public class Login {
     private TextField logText;
     @FXML
     private TextField logPass;
+    public static String verifiedHandle;
     public void logSubFun(){
         String handle = logText.getText();
         String pass = logPass.getText();
         System.out.println(handle + ":" + pass);
+        verifiedHandle = handle;
     }
 }

@@ -14,9 +14,12 @@ public class Test {
         String content = new String(Files.readAllBytes(Paths.get(filename)));
         return new JSONObject(content);
     }
-    String[] links = new String[100];
-    String[] names = new String[100];
-    public void main(String[] args) throws JSONException {
+
+    public static void main(String[] args) throws JSONException {
+        String names = "niloy , sejuti , miraz , mofa";
+        String []nameArray = names.split("\\s*,\\s*");
+        System.out.println(nameArray.length);
+        for(String name:nameArray) System.out.println(name);
         //new Post().postFun("https://weak-ruby-ladybug-robe.cyclic.app/niloy/register" , "{    \"handle\": \"value1\",\n    \"password\": \"value2\"}");
 
 
