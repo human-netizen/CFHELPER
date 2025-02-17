@@ -1,4 +1,4 @@
-# GabFosol - Codeforces Problem Manager
+# Codeforces Problem Manager
 
 A JavaFX desktop application that helps users manage and track Codeforces programming problems. The application provides an intuitive interface for browsing problems by rating and managing your problem-solving progress.
 
